@@ -92,18 +92,20 @@ const GptSearch = () => {
         </div>
       </div>
       <div className="Movie-Container">
-        {ap.length > 0
-          ? ap.map((item, index) => {
-              return (
-                <div className="Gpt-cont">
-                  {" "}
-                  <div>
-                    <MovieCart key={index} item={item.results} />
-                  </div>
+        {ap.length > 0 ? (
+          ap.map((item, index) => {
+            return (
+              <div className="Gpt-cont">
+                {" "}
+                <div>
+                  <MovieCart key={index} item={item.results} />
                 </div>
-              );
-            })
-          : ""}
+              </div>
+            );
+          })
+        ) : (
+          <h1>Loading</h1>
+        )}
       </div>
     </>
   );
