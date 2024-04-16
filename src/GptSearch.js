@@ -17,7 +17,7 @@ const GptSearch = () => {
     return state.GPT_DATA;
   });
   const openai = new OpenAI({
-    apiKey: process.env.API_Key,
+    apiKey: process.env.REACT_APP_API_Key,
     dangerouslyAllowBrowser: true, // This is the default and can be omitted
   });
 

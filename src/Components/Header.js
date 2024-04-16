@@ -50,7 +50,7 @@ const Header = () => {
         // console.log(data.ok);
       }
       // alert(process.env.API_Key);
-      alert(process.env.SECRECT_KEY);
+      alert(process.env.REACT_APP_API_Key);
 
       verification();
     } else {
