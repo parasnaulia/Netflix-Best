@@ -52,7 +52,7 @@ const GptSearch = () => {
     const data1 = data.map((item) => {
       return DFecting(item);
     });
-   
+
     const main = await Promise.all(data1);
     // console.log(main);
     // console.log("This is after all promise resolved");

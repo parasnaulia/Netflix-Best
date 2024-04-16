@@ -49,7 +49,8 @@ const Header = () => {
 
         // console.log(data.ok);
       }
-      alert(process.env.API_Key);
+      // alert(process.env.API_Key);
+      alert(process.env.SECRECT_KEY);
 
       verification();
     } else {
