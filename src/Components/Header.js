@@ -86,30 +86,8 @@ const Header = () => {
             height="20px"
           />
         </div>
-        <img
-          className="LOGO"
-          src={LOGO}
-          alt="NOIMG"
-          style={{ height: "100%", width: "15rem" }}
-        />
+        <img className="LOGO" src={LOGO} alt="NOIMG" />
       </div>
-      <div className="gpt-div">
-        {/* <button
-          onClick={() => {
-            <Link to="/login"></Link>;
-          }}
-          className="Gpt-btn"
-        >
-          {" "}
-          Gpt Search
-        </button> */}
-        {gpt && (
-          <Link to="/browse/gptsearch" className="Gpt-btn">
-            Gpt Search
-          </Link>
-        )}
-      </div>
-
       <div className="Profile1">
         {gpt && (
           <div
@@ -125,7 +103,24 @@ const Header = () => {
             LogOut
           </div>
         )}
-        <div>
+        <div className="gpt-div">
+          {/* <button
+          onClick={() => {
+            <Link to="/login"></Link>;
+          }}
+          className="Gpt-btn"
+        >
+          {" "}
+          Gpt Search
+        </button> */}
+          {gpt && (
+            <Link to="/browse/gptsearch" className="Gpt-btn">
+              Gpt Search
+            </Link>
+          )}
+        </div>
+
+        <div className="name1">
           {gpt && (
             <img
               src="https://i.pinimg.com/564x/1b/a2/e6/1ba2e6d1d4874546c70c91f1024e17fb.jpg"
